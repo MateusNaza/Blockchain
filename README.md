@@ -35,7 +35,7 @@ A blockchain é um conjunto de blocos que guardam informações dentro deles. A 
 
 Para garantir essa integridade, os blocos são ligados uns aos outros utilizando um algoritmo chamado proof of work (prova de trabalho), que aplica criptografia para gerar uma chave do bloco chamada de *Hash*. Abaixo segue uma ilustração da estrutura de uma blockchain.
 
-![Blockchain.png](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/blob/main/Blockchain/assets/Blockchain.png)
+![Blockchain.png](https://github.com/MateusNaza/Blockchain/blob/main/assets/Blockchain.png)
 
 > Bloco Gênesis é o nome dado ao primeiro bloco, ele não trás nenhuma informação na parte do seu corpo e é usado somente para dar início a cadeia de blocos (*Blockchain*).
 > 
@@ -45,7 +45,7 @@ Para garantir essa integridade, os blocos são ligados uns aos outros utilizando
 
 Dentro de cada bloco temos 3 estruturas principais:
 
-![Corpo do bloco.png](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/blob/main/Blockchain/assets/Corpo_do_bloco.png)
+![Corpo do bloco.png](https://github.com/MateusNaza/Blockchain/blob/main/assets/Corpo_do_bloco.png)
 
 
 # Mineração de um novo bloco
@@ -57,7 +57,7 @@ Após o bloco Gênesis, todos os blocos são criados através da mineração. Ab
 3. Quando a função encontra o *Hash* válido ela retorna o *Hash* e o *Nonce.*
 4. É criado e selado um novo bloco com todas as transações que estavam esperando o novo bloco, na parte de ‘Prova de Trabalho’ desse novo bloco é colocado o resultado da função anterior (*Hash* e *Nonce*).
 
-![Processo de Mineraçãoi.png](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/blob/main/Blockchain/assets/Processo_de_Mineraoi.png)
+![Processo de Mineraçãoi.png](https://github.com/MateusNaza/Blockchain/blob/main/assets/Processo_de_Mineraoi.png)
 
 
 # Lista de transações
@@ -68,7 +68,7 @@ Todas as transações realizadas vão primeiro para uma lista chamada ‘*curren
 2. A nova transação criada vai para a lista de transações atuais ‘*current_transactions*’
 3. Ao ser minerado um bloco, todas as transações da ‘*current_transactions*’ passa para dentro desse novo bloco e a lista é zerada para armazenar novas transações.
 
-![image.png](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/blob/main/Blockchain/assets/image.png)
+![image.png](https://github.com/MateusNaza/Blockchain/blob/main/assets/image.png)
 
 
 # Blockchain em funcionamento com fastAPI
@@ -81,31 +81,31 @@ uvicorn main:app --reload
 
 E precisei acrescentar ao final da URL /docs. Com isso, abre essa janela com todos os *endpoints*.
 
-![image.png](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/blob/main/Blockchain/assets/image%201.png)
+![image.png](https://github.com/MateusNaza/Blockchain/blob/main/assets/image%201.png)
 
 
 # Mine Block
 
 Esse endpoint faz o processo de minerar novos blocos, quando ele termina de minerar o novo bloco ele mostra o conteúdo do bloco minerado.
 
-![image.png](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/blob/main/Blockchain/assets/image%202.png)
+![image.png](https://github.com/MateusNaza/Blockchain/blob/main/assets/image%202.png)
 
 # New Transactions
 
 Aqui é onde criamos as transações, deve-se preencher todos os campos e executar o *endpoit*. Esse *endpoint* retorna o bloco onde a transação futuramente ficará armazenada.
 
-![image.png](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/blob/main/Blockchain/assets/image%203.png)
+![image.png](https://github.com/MateusNaza/Blockchain/blob/main/assets/image%203.png)
 
 
 # Chain
 
 Esse *endpoint* serve para mostrar a *blockchain* completa, como todos os seus blocos e conteúdos dos blocos. A Imagem abaixo contêm os 2 primeiros blocos.
 
-![image.png](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/blob/main/Blockchain/assets/image%204.png)
+![image.png](https://github.com/MateusNaza/Blockchain/blob/main/assets/image%204.png)
 
 
 # Current Transactions
 
 Esse *endpoint* retorna a lista das transações que estão aguardando para serem armazenadas quando um novo bloco for minerado.
 
-![image.png](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/blob/main/Blockchain/assets/image%205.png)
+![image.png](https://github.com/MateusNaza/Blockchain/blob/main/assets/image%205.png)
