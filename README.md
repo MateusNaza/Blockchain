@@ -18,15 +18,15 @@ Nesse repositório tem um funcionamento básico de uma *blockchain*, onde usei a
 
 # Indice
 
-1. [Entendendo a estrutura da Blockchain](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/edit/main/Blockchain/readme.md#estrutura-da-blockchain)
-2. [Estrutura dos blocos](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/edit/main/Blockchain/readme.md#estrutura-dos-blocos)
-3. [Mineração de um novo bloco](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/edit/main/Blockchain/readme.md#minera%C3%A7%C3%A3o-de-um-novo-bloco)
-4. [Lista de Transações](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/edit/main/Blockchain/readme.md#lista-de-transa%C3%A7%C3%B5es)
-5. [Funcionamento na prática com fastAPI](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/edit/main/Blockchain/readme.md#blockchain-em-funcionamento-com-fastapi)
-    1. [/mine_block/](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/edit/main/Blockchain/readme.md#mine-block)
-    2. [/new_transactions/](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/edit/main/Blockchain/readme.md#new-transactions)
-    3. [/chain/](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/edit/main/Blockchain/readme.md#chain)
-    4. [/current_transactions/](https://github.com/MateusNaza/Estudos-Engenharia-de-Dados/edit/main/Blockchain/readme.md#current-transactions)
+1. [Entendendo a estrutura da Blockchain](#estrutura-da-blockchain)
+2. [Estrutura dos blocos](#estrutura-dos-blocos)
+3. [Mineração de um novo bloco](#mineração-de-um-novo-bloco)
+4. [Lista de Transações](#lista-de-transações)
+5. [Funcionamento na prática com fastAPI](#blockchain-em-funcionamento-com-fastapi)
+    1. [/mine_block/](#mine-block)
+    2. [/new_transactions/](#new-transactions)
+    3. [/chain/](#chain)
+    4. [/current_transactions/](#current-transactions)
 
 
 # Estrutura da Blockchain
